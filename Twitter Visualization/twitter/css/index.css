@@ -1,0 +1,117 @@
+
+#keywordDiv{
+	align-self: top;
+	height:12%;
+	background-color: #a8a8a8;
+}
+
+#tweetStats{
+	margin-top: -40px;
+	align-self: right;
+	margin-left: 800px;
+	height:12%;
+	font-style: oblique;
+	font-size: 14px;
+	/*background-color: rgb(51,72,129);*/
+}
+#counter{
+	position : relative;
+	margin-top : -35px;
+	margin-left: 130px;
+}
+#positive-counter{
+	position : relative;
+	margin-top : 0px;
+	margin-left: 130px;
+}
+#negative-counter{
+	position : relative;
+	margin-top : 0px;
+	margin-left: 130px;
+}
+#headingText{
+	font-style: oblique;
+	margin-left: 10px;
+	font-size: 20px;
+}
+#sidebarContainer{
+	position: absolute;
+	padding: 5px;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: center;
+	top:65px;
+	width: 260px;
+	background-color: #a8a8a8;
+}
+#sidebar {
+	font-family: sans-serif;
+	font-style: oblique;
+	font-size:25px;
+}
+#heading {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+#trending-topics p {
+	margin: 5px;
+}
+#keyword {
+	padding:3px;
+	align-self: center;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	width : 250px;
+	margin-left : 175px;
+	align-items: center;
+	-webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	-moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	background: #f8f8f8;
+	color:#888;
+	border:none;
+	outline:none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	cursor:pointer;
+}
+
+
+
+
+body {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	font-family: verdana;
+	background-color: #a8a8a8a;
+	/*background-color: rgb(51,72,129);*/
+}
+
+
+
+/**** End of Header CSS ****/
+
+/* make container, and thus map, 100% width */
+.container {
+	width: 100%;
+	height: 100%;
+	background-color : #a8a8a8;
+}
+
+#map_canvas{
+	position:absolute;
+	height:90%;
+	width: 80%;
+	margin-left: 270px;
+	top:70px;
+}
+#tweets{
+	position: absolute;
+	top: 60px;
+	left: 75px;
+	z-index:1000;
+	font-size: 30px;
+}

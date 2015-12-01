@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>Twitter Real Time Heat Map using Node</title>
+	<script src="../socket.io/socket.io.js"></script>
+	<script src="/libs/jquery-1.10.1.js"></script>
+	<link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="/js/twitterStream.js" type="text/javascript"></script>
+</head>
+<body onload="initialize()">
+	<div class="container">
+		<div id="keywordDiv">
+			<span id="headingText"> Twitter Heat Map Visualization </span>
+			<select width="5%" align="center" id="keyword" onChange="sendKeywordToServer()">
+				<option value="" disabled selected>Select your keyword</option>
+				<option value="all"> All </option>
+				<option value="love">Love</option>
+				<option value="football">Football</option>
+				<option value="tech">Tech</option>
+				<option value="apple">Apple</option>
+				<option value="bad">Bad</option>
+			</select>
+			<div id= "tweetStats">
+				<h4 >Tweet Counter</h4>
+				<div id="counter"></div>
+				<div id="positive-counter"> </div>
+				<div id="negative-counter"> </div>
+			</div>
+		</div>
+		<div id="map_canvas"></div>
+		<div id="sidebarContainer">
+			<div id="sidebar">
+				<h4 id="heading">World Trends</h4>
+				<select id='dropdown' name='keywords'>
+					<option value='2459115'>New York</option>
+					<option value='23424848'>Mumbai</option>
+					<option value='615702'>Paris</option>
+					<option value='44418'>London </option>
+					<option value='1118370'>Tokyo</option>
+					<option value='1105779'>Sydney</option>
+					<option value='1132599'>Seoul</option>
+					<option value="455825"> Rio De Janeiro </option>
+
+				</select>
+				<div id="trending-topics"> </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
